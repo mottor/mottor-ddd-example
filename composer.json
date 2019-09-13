@@ -1,0 +1,36 @@
+{
+  "name": "mottor/api",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Yuriy Pavlov",
+      "email": "yuriypavlov@outlook.com"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.2"
+    },
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Mottor\\Api\\App\\": "src/App",
+      "Mottor\\Api\\Domain\\": "src/Domain",
+      "Mottor\\Api\\Infrastructure\\": "src/Infrastructure"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mottor\\Api\\Test\\": "src/Test"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^8.3"
+  },
+  "require-dev": {
+  }
+}
